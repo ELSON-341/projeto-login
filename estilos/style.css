@@ -83,11 +83,35 @@ form > a.botao {
 }
 div.campo {
     display: block;
-    height: 40px;
+    height: 46px;
     width: 100%;
     background-color: var(--cor-lilas);
-    border-radius: 5px;
+    border-radius: 5px solid var(--cor-lilas);
+    border-radius: 8px;
     margin: 5px 0px;
+}
+div.campo > input {
+    background-color: var(--cor-verde);
+    font-size: 1em;
+    width: calc(100% - 44px);
+    position: relative;
+    top: 1px;
+    left: 40px;
+    height: 85%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-40px);
+}
+div.campo > input:focus-within {
+    background-color: white;
+    border-color: var(--cor-lilas);
+}
+div.campo > label {
+    color: white;
+    width: 40px;
+    font-size: 2em;
+    padding: 5px;
 }
 form > a.botao:hover {
     background-color: var(--cor-verde);
