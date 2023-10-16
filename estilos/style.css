@@ -82,30 +82,32 @@ form > a.botao {
     color: #2e5a59;
 }
 div.campo {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 46px;
     width: 100%;
     background-color: var(--cor-lilas);
     border-radius: 5px solid var(--cor-lilas);
     border-radius: 8px;
     margin: 5px 0px;
+    padding: 0px 2px 0px 2px;
 }
 div.campo > input {
     background-color: var(--cor-verde);
     font-size: 1em;
     width: calc(100% - 44px);
+    height: 80%;
     border: 0px;
     border-radius: 8px;
     padding: 4px;
-    position: relative;
-    top: 1px;
-    left: 40px;
-    height: 85%;
-    transform: translateY(-40px);
 }
 div.campo > input:focus-within {
     background-color: white;
     border-color: var(--cor-lilas);
+}
+div.campo > input::placeholder {
+    color: rgb(70, 66, 66);
 }
 div.campo > label {
     color: white;
