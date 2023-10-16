@@ -82,9 +82,7 @@ form > a.botao {
     color: #2e5a59;
 }
 div.campo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     height: 46px;
     width: 100%;
     background-color: var(--cor-lilas);
@@ -94,6 +92,7 @@ div.campo {
     padding: 0px 2px 0px 2px;
 }
 div.campo > input {
+    display: block;
     background-color: var(--cor-verde);
     font-size: 1em;
     width: calc(100% - 44px);
@@ -101,6 +100,10 @@ div.campo > input {
     border: 0px;
     border-radius: 8px;
     padding: 4px;
+
+    position: relative;
+    left: 39px;
+    transform: translateY(-39.5px);
 }
 div.campo > input:focus-within {
     background-color: white;
