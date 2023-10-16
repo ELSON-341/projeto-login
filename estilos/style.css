@@ -94,13 +94,13 @@ div.campo > input {
     background-color: var(--cor-verde);
     font-size: 1em;
     width: calc(100% - 44px);
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
     position: relative;
     top: 1px;
     left: 40px;
     height: 85%;
-    border: 0px;
-    border-radius: 8px;
-    padding: 4px;
     transform: translateY(-40px);
 }
 div.campo > input:focus-within {
